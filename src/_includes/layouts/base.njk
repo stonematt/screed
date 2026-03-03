@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title and title !== "SCREED" %}{{ title }} · SCREED{% else %}SCREED{% endif %}</title>
+  <meta name="description" content="{{ description or 'Dispatches from the underground.' }}">
+
+  <meta property="og:title" content="{{ title or 'SCREED' }}">
+  <meta property="og:description" content="{{ description or 'Dispatches from the underground.' }}">
+  <meta property="og:type" content="{% if tags and 'doc' in tags %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="https://screed.cultureshock.xyz{{ page.url }}">
+  <meta property="og:site_name" content="SCREED">
+
+  {% if date %}
+  <meta name="publish-date" content="{{ date | dateToISO }}">
+  {% endif %}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23c41e3a'/><text x='50' y='72' font-family='monospace' font-size='70' font-weight='bold' fill='%23fff' text-anchor='middle'>S</text></svg>">
+
+  <!-- Analytics: drop Plausible or Umami snippet here -->
+</head>
+<body class="{{ bodyClass or '' }}">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo" aria-label="SCREED home">SCREED</a>
+      <nav class="site-nav">
+        <button data-theme-toggle class="theme-toggle" aria-label="Toggle light and dark theme">
+          <span class="toggle-icon" aria-hidden="true"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main" id="main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-text">Published in defiance of the mundane · <a href="/">SCREED</a> · {{ "" | dateToYear }}</p>
+      <p class="footer-sub">You didn't get this from us.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

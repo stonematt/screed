@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+title: SCREED
+description: "Dispatches from the underground. A counterculture document drop."
+bodyClass: page-index
+---
+
+<section class="index-hero">
+  <p class="index-tagline">dispatches from the underground</p>
+  <p class="index-sub">A document drop for the curious and the contrarian.<br>Read at your own risk.</p>
+</section>
+
+<hr class="rule">
+
+<section class="doc-index">
+  <h2 class="section-heading">Documents on File</h2>
+
+  {%- if collections.doc.length %}
+  <ol class="doc-list" reversed>
+    {%- for doc in collections.doc | reverse %}
+    <li class="doc-card">
+      <a href="{{ doc.url }}" class="doc-card-link">
+        <h3 class="doc-card-title">{{ doc.data.title }}</h3>
+        <div class="doc-card-meta">
+          <time datetime="{{ doc.date | dateToISO }}">{{ doc.date | dateToReadable }}</time>
+          {%- if doc.data.author %}<span class="doc-card-author"> &middot; {{ doc.data.author }}</span>{%- endif %}
+        </div>
+        {%- if doc.data.description %}
+        <p class="doc-card-desc">{{ doc.data.description }}</p>
+        {%- endif %}
+      </a>
+    </li>
+    {%- endfor %}
+  </ol>
+  {%- else %}
+  <p class="no-docs">The filing cabinet is empty. Check back when we have something worth saying.</p>
+  {%- endif %}
+</section>

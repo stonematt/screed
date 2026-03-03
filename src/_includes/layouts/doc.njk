@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+bodyClass: page-doc
+---
+<article class="doc">
+  <header class="doc-header">
+    <h1 class="doc-title">{{ title }}</h1>
+    <div class="doc-meta">
+      <time datetime="{{ date | dateToISO }}">{{ date | dateToReadable }}</time>
+      {% if author %}<span class="doc-author"> · {{ author }}</span>{% endif %}
+    </div>
+    {% if description %}
+    <p class="doc-description">{{ description }}</p>
+    {% endif %}
+    <hr class="rule">
+  </header>
+  <div class="doc-content">
+    {{ content | safe }}
+  </div>
+  <footer class="doc-footer">
+    <a href="/" class="back-link">&larr; Back to the index</a>
+  </footer>
+</article>
