@@ -1,7 +1,7 @@
 ---
 title: "I Built This Site Without Typing"
 date: 2026-03-03T20:00:00
-description: "A friend needed Netlify help. I didn't know Netlify. So I talked a computer into building me a website."
+description: "A friend asked about a 25-year-old DNS record. The answer led to Netlify. So I talked a computer into building me a website."
 author: stonematt
 ai_assisted: true
 ai_disclosure: "This entire post, the site it lives on, and the infrastructure under it were built by voice dictation with Claude Code. The human talked. The AI typed. Both reviewed."
