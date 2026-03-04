@@ -213,6 +213,26 @@ img {
   color: var(--accent);
 }
 
+/* --- Nav Links --------------------------------------------- */
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.nav-link {
+  font-family: var(--font-mono);
+  font-size: .8rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  letter-spacing: .05em;
+  transition: color .2s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent);
+}
+
 /* --- Theme Toggle ------------------------------------------ */
 .theme-toggle {
   appearance: none;
