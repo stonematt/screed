@@ -1,6 +1,6 @@
 ---
 title: "Python Logging Bootstrap — One-Shot Claude Code Prompt"
-date: 2026-03-02
+date: 2026-03-02T14:00:00
 author: stonematt
 description: "A one-shot prompt to bootstrap centralized, leveled Python logging in any project via Claude Code."
 ---

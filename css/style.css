@@ -410,6 +410,23 @@ img {
   color: var(--text);
 }
 
+/* --- AI Disclosure ----------------------------------------- */
+.ai-disclosure {
+  margin-top: 2.5rem;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--accent-gold);
+  background: var(--bg-card);
+  border-radius: 0 4px 4px 0;
+}
+
+.ai-disclosure p {
+  font-family: var(--font-ui);
+  font-size: .8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
 /* --- Document Footer --------------------------------------- */
 .doc-footer {
   margin-top: 3rem;

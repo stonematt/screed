@@ -17,6 +17,11 @@ bodyClass: page-doc
   <div class="doc-content">
     {{ content | safe }}
   </div>
+  {% if ai_assisted %}
+  <aside class="ai-disclosure">
+    <p>{{ ai_disclosure or "This post was drafted with AI assistance from voice-dictated instructions, then reviewed and edited by the author." }}</p>
+  </aside>
+  {% endif %}
   <footer class="doc-footer">
     <a href="/" class="back-link">&larr; Back to the index</a>
   </footer>

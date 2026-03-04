@@ -1,6 +1,6 @@
 ---
 title: "Don't Pip Into the Void — Python Environments for AI-Assisted Dev"
-date: 2026-03-03
+date: 2026-03-03T10:00:00
 author: stonematt
 description: "Your AI agent is installing Python packages. Do you know where they're going? Neither does it."
 ---

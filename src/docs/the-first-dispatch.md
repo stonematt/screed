@@ -1,6 +1,6 @@
 ---
 title: "The First Dispatch"
-date: 2026-03-02
+date: 2026-03-02T10:00:00
 description: "In which we establish our intentions and declare war on the mundane."
 author: "The Editor"
 ---
