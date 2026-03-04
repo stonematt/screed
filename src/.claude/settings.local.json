@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /Users/mstone/src/github.com/stonematt/screed && npm start)",
+      "Bash(rm -rf /Users/mstone/src/github.com/stonematt/screed/_site/CLAUDE && cd /Users/mstone/src/github.com/stonematt/screed && npm start)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git:*)",
+      "WebSearch"
+    ]
+  }
+}
