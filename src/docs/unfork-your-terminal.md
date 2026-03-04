@@ -1,6 +1,6 @@
 ---
 title: "Unfork Your Terminal — A Dotfiles Primer for Mac"
-date: 2026-03-03
+date: 2026-03-03T14:00:00
 author: stonematt
 description: "Your terminal is showing you bash-3.2$. That's not a prompt, it's a cry for help."
 ---
