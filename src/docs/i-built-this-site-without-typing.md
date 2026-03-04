@@ -17,9 +17,13 @@ That's it. No punctuation. Half the sentences bleed into the next one. And it pr
 
 ## Who I Am
 
-I'm stonematt. Not a developer. Product guy, operations background. I've worked with creative founders, aggressive project managers, innovative architects, insidious QA teams, and salt-of-the-earth operations crews. I know what an amazing software development lifecycle actually looks like. I can read code. I understand architecture. I just don't usually write it.
+"Why are you asking?" It's my favorite question. Anytime this particular friend comes to me, there's almost always an interesting reason behind it.
 
-A friend asked me for help with Netlify. I'd never used it. I could have just read the docs and given them an answer, but I learn better by doing. So I decided to build something.
+He had a typical in-the-weeds question about how to set up a DNS record and where his domain was hosted. He came to me because I helped him set it up in 2001. Twenty-five years ago. Frankly, except for email, neither of us thinks about this domain anymore. But now he wanted to spin up a website.
+
+The answer led to Netlify. I'd never used it. Maybe I could've read the docs, but it's more fun to go do. So I decided to build something.
+
+I'm stonematt. Not a developer. Product guy, operations background. I've worked with creative founders, aggressive project managers, innovative architects, insidious QA teams, and salt-of-the-earth operations crews. I know what an amazing software development lifecycle actually looks like. I can read code. I understand architecture. I just don't usually write it.
 
 Here's where it gets weird: I didn't want to *work* on it. I was in the middle of something else. I wanted to talk about it. Describe what I wanted, think out loud, let someone else do the typing.
 
@@ -107,4 +111,4 @@ This site was built with Claude Code. I talked, it typed. It asked good question
 
 ---
 
-**END TRANSMISSION**
+**Ever forward.**

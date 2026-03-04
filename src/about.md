@@ -18,15 +18,15 @@ The technology is deliberately simple. Static files built with [Eleventy](https:
 
 ## Who's Behind It
 
-I'm stonematt. Not a developer. Product guy, operations background. I've worked with creative founders, aggressive project managers, innovative architects, insidious QA teams, and salt-of-the-earth operations crews. I know what an amazing software development lifecycle looks like. I can read code. I understand architecture. I just don't usually write it.
+I'm stonematt. Not a developer. Product guy, operations background. I've worked with creative founders, aggressive project managers, innovative architects, insidious QA teams, and salt-of-the-earth operations crews. I know what an amazing software development lifecycle actually looks like. I can read code. I understand architecture. I just don't usually write it.
 
 ## How This Got Built
 
-A friend asked me for help with Netlify. I'd never used it. So I decided to learn by building something. But I didn't want to *type*. I was busy. I wanted to talk.
+A friend had an in-the-weeds question about a DNS record. He came to me because I helped him set it up in 2001. Twenty-five years ago. The answer led to Netlify. I'd never used it. Maybe I could've read the docs, but it's more fun to go do.
 
-So I opened a terminal, started [Claude Code](https://claude.ai/code), and described what I wanted out loud via voice dictation. Claude asked questions. I answered. It started building. I kept talking. The CSS, the layouts, the security headers, the dark mode toggle, the RSS feed. All of it, built by voice.
+I didn't want to *type* though. I was busy. So I opened a terminal, started [Claude Code](https://claude.ai/code), and described what I wanted out loud via voice dictation. Claude asked questions. I answered. It started building. I kept talking. The CSS, the layouts, the security headers, the dark mode toggle, the RSS feed. All of it, built by voice.
 
-I'd estimate 95% of the keystrokes in this project belong to Claude, not to me. My job was describing what I wanted, making decisions, and reviewing the output. That's not laziness. It's a different job description.
+95% of the keystrokes in this project belong to Claude, not to me. My job was describing what I wanted, making decisions, and reviewing the output. That's not laziness. It's a different job description.
 
 The full story is in [I Built This Site Without Typing](/docs/i-built-this-site-without-typing/).
 
@@ -35,6 +35,11 @@ The full story is in [I Built This Site Without Typing](/docs/i-built-this-site-
 1. **Say something worth reading.** Life is short and screens are bright. Don't waste anyone's photons.
 2. **No corporate speak.** If it sounds like it was written by a committee, it doesn't belong here.
 3. **Keep it SFW.** Subversive, yes. Offensive, no.
+
+> "Sometimes you just violently face reality."
+> — E.W. Looney, Brightlink
+
+**Ever forward.**
 
 </div>
 </article>
