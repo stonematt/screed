@@ -4,3 +4,4 @@ _site/
 .env
 *.log
 .cache
+settings.local.json
