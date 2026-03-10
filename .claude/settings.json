@@ -3,7 +3,6 @@
     "allow": [
       "Bash(npm install:*)",
       "Bash(npx:*)",
-      "Bash(git:*)",
       "Bash(npm start:*)",
       "WebFetch(domain:screed.cultureshock.xyz)",
       "Bash(curl:*)",
@@ -11,7 +10,10 @@
       "Bash(npm run:*)",
       "Bash(gh pr:*)",
       "Bash(grep:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(ls:*)",
+      "WebFetch(domain:worktrunk.dev)",
+      "Bash(~/bin/wt-claude-memory:*)"
     ]
   }
 }
