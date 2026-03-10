@@ -5,3 +5,4 @@ _site/
 *.log
 .cache
 settings.local.json
+make-screed-workspace/
