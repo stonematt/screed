@@ -170,6 +170,36 @@ li + li {
   margin-top: .35rem;
 }
 
+/* --- Tables ------------------------------------------------ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+th, td {
+  text-align: left;
+  padding: .5rem .75rem;
+  border: 1px solid var(--rule-bright);
+}
+
+th {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--text-bright);
+  background: var(--bg-elevated);
+  letter-spacing: .02em;
+}
+
+td {
+  color: var(--text);
+}
+
+tr:nth-child(even) td {
+  background: var(--bg-elevated);
+}
+
 /* --- Images ------------------------------------------------ */
 img {
   max-width: 100%;
