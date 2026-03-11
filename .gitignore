@@ -5,3 +5,5 @@ _site/
 *.log
 .cache
 settings.local.json
+# Skill eval workspaces (skill-creator artifacts)
+make-screed-workspace/

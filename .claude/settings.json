@@ -5,6 +5,8 @@
       "Bash(npx:*)",
       "Bash(npm start:*)",
       "WebFetch(domain:screed.cultureshock.xyz)",
+      "WebFetch",
+      "Bash(open:*)",
       "Bash(curl:*)",
       "Bash(npm ls:*)",
       "Bash(npm run:*)",
