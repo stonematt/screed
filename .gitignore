@@ -7,3 +7,6 @@ _site/
 settings.local.json
 # Skill eval workspaces (skill-creator artifacts)
 make-screed-workspace/
+
+# Open Design MCP wiring (machine-specific abs paths; see docs/open-design-mcp.md)
+.mcp.json
