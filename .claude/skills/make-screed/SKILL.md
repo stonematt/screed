@@ -131,30 +131,11 @@ SCREED publishes three kinds of things:
 - **Code blocks** with language hints for technical content.
 - **Tables** when comparing things side by side (see the voice dictation table in "I Built This Site Without Typing" for the vibe).
 
-**Strong closings.** End with one of:
-
-- A wry aside or callback to something earlier
-- A one-liner that lands
-- `**END TRANSMISSION**` (for dispatches and technical docs)
-- `**Ever forward.**` (for personal essays)
-
-The best closings leave the reader with something to sit with. Frustrated pieces can close with hope ("I hope the maintainers are listening. In the meantime, use the workaround and file the feedback."). Observational pieces can close with a thread left hanging. The closing should match the emotional register of the piece, not default to cynicism.
-
-Don't end with a summary. Don't end with "In conclusion." Don't end with a call to action unless it's genuinely funny.
+**Closings matter.** Don't default to a neat summary or "In conclusion." See Phase 3's Closing Format for the exact options and rules.
 
 ### Phase 1 Output
 
-You now have a complete markdown draft with frontmatter.
-
-**STOP.** Do not show it to the user yet. Do not run the smell test yet. Do not search for links yet. Proceed directly to Phase 2.
-
----
-
-> **MODE SWITCH: Stop being a writer. Become an editor.**
->
-> You are no longer generating content. You are now ruthlessly cutting, tightening, and decorating. Every change from here should make the draft shorter, sharper, or more useful. Nothing should make it longer unless you're adding a verified link.
-
----
+You now have a complete markdown draft with frontmatter. Don't show it to the user yet — it still needs the sniff test and link decoration in Phase 2, and surfacing a rough draft first just means re-litigating edits the editor pass would have caught anyway.
 
 ## Phase 2: Post-Processing
 
@@ -162,62 +143,9 @@ Two steps, in order. Do both before showing anything to the user.
 
 ### Step 1: AI Smell Test
 
-**Before you start, read `references/smell-test-examples.md`.** It has before/after pairs from real SCREED drafts showing exactly what each failure mode looks like and how to fix it. Don't skip this. The examples are the calibration. Without them you'll pattern-match on the rules below and still produce AI-sounding prose.
+Invoke the `stone-ai-sniff-test` skill against the full draft, paragraph by paragraph. It's the quality gate: run its primary checks (substitution test, buried lede, resolution addiction, and the rest) and its secondary cadence/format checks, not just the lexical backstop.
 
-Run this checklist against every paragraph. This is your quality gate. If any of these fire, rewrite the offending passage.
-
-**Lexical tells (search and destroy):**
-
-- Em dashes (`—`). Zero tolerance. Rewrite with a period, comma, or new sentence.
-- Semicolons joining independent clauses. Split into two sentences.
-- "Furthermore," "moreover," "additionally," "notably," "it's worth noting," "in essence," "fundamentally," "that said," "indeed," "certainly," "essentially"
-- "Delve," "leverage," "utilize," "facilitate," "robust," "seamless," "landscape," "paradigm," "holistic"
-- "It's important to note that" or any variation. Just say the thing.
-
-**Cadence tells (read the rhythm):**
-
-- Three or more sentences in a row with the same structure. (Subject-verb-object. Subject-verb-object. Subject-verb-object. That's a robot.)
-- Three or more bullet points that start with the same word or pattern. Mix them up.
-- Every paragraph being roughly the same length. Real writing has short punchy paragraphs mixed with longer ones.
-- Opening sentences that all follow "Topic sentence introducing the concept." Break the pattern.
-
-**Section shape tells (the silhouette test):**
-
-- Scroll through the draft without reading it. Just look at the shapes. If every section is roughly the same height, the same number of paragraphs, the same density, you have a problem. See the silhouette test in the examples file.
-- Every section being "header + two short paragraphs" is a dead giveaway. Real writers don't produce uniform section shapes. Some sections are one dense paragraph. Some are five paragraphs with a code block. Some are just a blockquote and a sentence. Vary the shape.
-- The lede is buried. If the most interesting claim, observation, or punchline is in section 3 or later, restructure. Hook first, backstory second.
-
-**Structure tells (the format trap):**
-
-- Bold-numbered lists ("**1. Do this.** Explanation. **2. Do that.** Explanation.") are the AI's favorite structure for suggestions. It's a listicle. Real people don't bold-number their points in a rant. Use paragraphs. Let the points flow into each other. See the before/after in the examples file.
-- "Three things, in order of impact:" is an AI intro sentence. Just start saying the things.
-
-**Tone tells (check your temperature):**
-
-- Hedging where you should commit. "This can sometimes be problematic" vs "This is broken."
-- Praising both sides to avoid having an opinion. SCREED has opinions. Take a position.
-- Generic enthusiasm. "This is a really exciting development" says nothing. What specifically makes it matter?
-- Pure ranting with no path forward. If the piece identifies a problem but offers no solution, workaround, or constructive direction, it's not a screed. It's a complaint. Add what you'd fix, what you tried, or where you'd go next. The reader should leave with something they can do, not just something to be mad about.
-
-**Voice tells (first person vs. editorial board):**
-
-- If a paragraph talks about "the user" in third person when the author IS the user, rewrite in first person. "The user did the work" vs "I did the work." First person is more direct and harder to fake.
-- If a paragraph reads like a position paper or policy recommendation ("the platform should defer to"), rewrite as a personal observation. Tell the story. Don't prescribe the moral.
-
-**Resolution addiction:**
-
-- Every section wrapping up neatly is an AI tell. Real essays leave threads hanging. A section can end mid-thought if the next section picks it up. Not every observation needs a concluding sentence.
-- If the closing ties a bow on everything, cut the bow. The best endings leave something unresolved. A specific hope, a thread left hanging, a wry observation. Not a summary.
-
-**Bumper sticker lines:**
-
-- Lines that sound quotable but say nothing specific. "I'm not mad. I'm building." Could be about anything. If a line works as a motivational poster, cut it. The piece should earn its emotional weight through content, not slogans.
-
-**The paragraph test:** Pick any paragraph at random. Could it appear in a Medium post titled "10 Things Every Developer Should Know"? If yes, rewrite it. It should sound like it belongs in a zine someone photocopied at Kinko's at 2 AM.
-
-**The substitution test:** Replace the topic with a completely different one. Does the sentence still work? "This represents a fundamental shift in how we think about [topic]" works for anything, which means it says nothing. Kill it.
-
-If your draft fails more than two of these checks, don't patch individual sentences. The voice is off. Step back, read the examples file for calibration, reread the existing screeds in `src/docs/`, and rewrite from the feeling, not from an outline.
+**SCREED addendum — builders, not complainers.** The sniff test's generic "pure complaint, no path forward" tone check is SCREED's core rule, not a nice-to-have (see "Builders, not complainers" above). A piece that names a problem still needs to point toward a fix, a workaround, or a direction. Don't let a token caveat satisfy the check.
 
 ### Step 2: Web Reference Decoration
 
@@ -266,6 +194,19 @@ You now have a revised draft with smell test fixes applied and 2-5 verified inli
 
 ## Phase 3: Review and Publish
 
+### Closing Format
+
+Every draft needs a strong closing before it's written to disk. End with one of:
+
+- A wry aside or callback to something earlier
+- A one-liner that lands
+- `**END TRANSMISSION**` (for dispatches and technical docs)
+- `**Ever forward.**` (for personal essays)
+
+The best closings leave the reader with something to sit with. Frustrated pieces can close with hope ("I hope the maintainers are listening. In the meantime, use the workaround and file the feedback."). Observational pieces can close with a thread left hanging. Match the emotional register of the piece, don't default to cynicism.
+
+Don't end with a summary. Don't end with "In conclusion." Don't end with a call to action unless it's genuinely funny.
+
 ### Step 1: Write and Preview
 
 Do all of this without asking permission. Just do it.
@@ -307,7 +248,7 @@ User says: "write a screed about how I built a skill to fix Claude's commit beha
 You would:
 
 1. **Phase 1 — Draft.** Hook first. Don't start with "I use Claude Code." Start with the punchline: "I built a fix for a broken default. The fix works. The platform won't use it." That's the lede. Then back-fill: what's broken (the `$()` permission prompt), what the fix is (the skill), why it doesn't trigger (architecture conflict). Keep sections different shapes. Include actual code.
-2. **Phase 2 — Edit.** Read the smell test examples. Run every check. Fix anything that fires. Then scan for linkable technologies (Claude Code, Eleventy, whatever's mentioned). WebSearch for official docs, WebFetch to verify, insert 2-5 inline links on first mention.
+2. **Phase 2 — Edit.** Run `stone-ai-sniff-test` against the draft. Fix anything that fires. Then scan for linkable technologies (Claude Code, Eleventy, whatever's mentioned). WebSearch for official docs, WebFetch to verify, insert 2-5 inline links on first mention.
 3. **Phase 3 — Publish.** Write to `src/docs/the-commit-skill-problem.md`. Start the dev server. Open in Chrome. Wait for the user to read it and say "looks good" or "change X." Offer LinkedIn/Substack versions after approval.
 
 Aim for 3-5 minute read time. If it's getting long, ask what can be cut, not what can be added.
